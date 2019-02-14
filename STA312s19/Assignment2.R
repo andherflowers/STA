@@ -1,17 +1,17 @@
 
-###############################################################################
+#----------------------------------------------------------
 #6(e) Use R to calculate the two-sided p-value for Z = 4.1
-###############################################################################
+#----------------------------------------------------------
 Z = 4.1
 pval = 2 * (1-pnorm(abs(Z)))
 c(Z,pval)
 
-###############################################################################
+#----------------------------------------------------------
 #7(d) The file [url] has a set of raw data. Using R and your answers to
 # Questions 7b and 7c, calculate
 #i. The maximum likelihood estimate πhat
 #ii. A 95% confidence interval for π.
-###############################################################################
+#----------------------------------------------------------
 
 data = scan("http://www.utstat.toronto.edu/~brunner/data/legal/inversegamma.data.txt")
 pihat = length(data)/sum(1/data) #from 7(b) Derive a formula for the MLE of π

@@ -1,5 +1,5 @@
 # STA
-A repository of my Statistics courses taken at UofT
+A repository of my Statistics courses taken at UofT requiring computer packages
 
 **STA258H5S - Statistics with Applied Probability (R)**
 

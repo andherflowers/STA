@@ -1,0 +1,17 @@
+STA304H5F - Surveys, Sampling and Observational Data
+
+The sample survey is a widely used technique for obtaining information about a large population at relatively small cost. Only probability samples can provide both an estimator and a measure of sampling error from the data itself. In addition to sampling error, non-sampling errors (refusals, not-at-home, lies, inaccuracies, etc.) are always present, and can produce serious biases.
+
+The course covers: design of surveys, sources of bias, randomized response surveys. Techniques of sampling; stratification, clustering, unequal probability selection. Sampling inference, estimates of population mean and variances, ratio estimation, observational data; correlation vs. causation, missing data, sources of bias. [36L, 12T]
+##########
+
+Additionally, this course required students to prepare a group project throughout the term consisting of:
+
+- Selecting a target population with question(s) of interest
+- Designing a questionnaire to answer our questions of interest
+- Collecting data from a sample
+- Analyzing the data and making inferences based on them
+- Concluding our findings in technical and non-technical language
+
+This folder mainly contains the project written report submission for lecture 1 group 5.
+The zipped folder containing the .tex file and appended plot images can also be downloaded from this link: https://drive.google.com/open?id=1VjCGV0M2qaD17yRhpVFd66M8ikt16Wrz

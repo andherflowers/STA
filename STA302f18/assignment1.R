@@ -1,5 +1,5 @@
 #-----------------------------------------------------------------------
-# Problem 1 a)
+# Problem 1 a) Find Regression equation
 #-----------------------------------------------------------------------
 
 real_estate_url = "http://www.math.unm.edu/~alvaro/real_estate.txt" # Entering data;
@@ -14,7 +14,7 @@ estate.reg$coef
 # The regression equation is y = 94.45693x - 3116.95687
 
 #-----------------------------------------------------------------------
-# Problem 1 b)
+# Problem 1 b) Plot the corresponding graph
 #-----------------------------------------------------------------------
 
 plot(area, price, pch=19, xlab="Living Area", ylab="Price", main="1 b) Luo") # Making scatterplot;

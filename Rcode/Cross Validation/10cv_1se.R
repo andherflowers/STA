@@ -3,14 +3,14 @@
 #----------------------------------------------------------
 
 do_10cv_1se_knn = function(X,Y,krange){
-  n = length(Y) # smaple size
+  n = length(Y) # sample size
 
   # permute index set**TO SAMPLE n/10 W/O REPLACEMENT!! FASTER! **PERMUTE BOTH X AND Y
   permidx = sample(1:n,n)
   X = as.matrix(X)[permidx,]
   Y = Y[permidx]
 
-  # size of fold IS n/10!! AND SAVE IN AN ARRAY
+  # size of fold is n/10, saved in an array
   foldsize = floor(n/10)
 
   # for saving errors

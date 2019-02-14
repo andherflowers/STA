@@ -1,3 +1,6 @@
+#----------------------------------------------------------
+# 10 fold cross-validation for K-nearest neighbours
+#----------------------------------------------------------
 do_10cv_knn = function(X,Y,krange){
   n = length(Y) # smaple size
 
@@ -43,7 +46,7 @@ do_10cv_knn = function(X,Y,krange){
 do_10cv_1se_knn = function(X,Y,krange){
   n = length(Y) # sample size
 
-  # permute index set**TO SAMPLE n/10 W/O REPLACEMENT!! FASTER! **PERMUTE BOTH X AND Y
+  # permute index set to sample n/10 w/o replacement FASTER! **PERMUTE BOTH X AND Y
   permidx = sample(1:n,n)
   X = as.matrix(X)[permidx,]
   Y = Y[permidx]
@@ -72,12 +75,9 @@ do_10cv_1se_knn = function(X,Y,krange){
      }else{
        testidx = (foldsize*(j-1)):n
      }
-      #USUALLY ONLY TWO DIMENTIONS IN ARRAY SO IF WE DONT WANT THIS TO BE A VECTOR AND STILL MATRIX WE DO
-#DROP=FALSE: if function expdect matrixx as input but if doesnt have good dimension then error!
-      #so here it doesnt drop the dimension of the awway so even if its a vector will be treated as k*1 array/error?
-     fit = knnreg(as.matrix(X)[-testidx,,drop=FALSE],Y[-testidx],k=K)
-     #ALSO TWO ,, TO RESTRICT ONE PART!!
-     #NOW WE CAN DO CV
+      
+     fit = knnreg(as.matrix(X)[-testidx,,drop=FALSE],Y[-testidx],k=K) #drops the dimension away to prevent errors
+     #now do cross-validation
      pr = predict(fit, newdata = as.matrix(X)[testidx,,drop=FALSE])
      fold_err[j] = mean((Y[testidx] - pr)^2)
 
@@ -96,7 +96,7 @@ do_10cv_1se_knn = function(X,Y,krange){
   return(res_list)
 }
 
-
+#graph example
 re = do_10cv_1se_knn(x,y,1:50)
 
 plot(re$cv_error)

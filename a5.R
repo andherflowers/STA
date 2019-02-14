@@ -10,8 +10,8 @@ c(lambda_hat-1.96*sqrt(vlambda_hat),lambda_hat+1.96*sqrt(vlambda_hat)) # 2(c) 95
 ###############################################################################
 t = seq(from=0,to=3,by=0.1)
 St = exp(-sum(Uncensored)/sum(Time)*t)
-LCL_delta = St-1.96*(lambda_hat^2/sum(Uncensored)*exp(-2*lambda_hat*t))
-UCL_delta = St+1.96*(lambda_hat^2/sum(Uncensored)*exp(-2*lambda_hat*t))
+LCL_delta = St-1.96*sqrt((lambda_hat^2/sum(Uncensored)*exp(-2*lambda_hat*t)))
+UCL_delta = St+1.96*sqrt((lambda_hat^2/sum(Uncensored)*exp(-2*lambda_hat*t)))
 cbind(t,St,LCL_delta,UCL_delta)
 ###############################################################################
 # 2(e) Now do the same thing, using your confidence limits from Question 1(f)

@@ -10,13 +10,13 @@ channing =within(channing, {
   ageentry = ageentry/12
   time= time/12
   
-  gender[gender==1]=0
+  gender[gender==1]=0 #recode dummy variables such that Female = 1 and Male = 0
   gender[gender==2]=1
 })
 
 attach(channing)
 
-agec = ageentry-mean(ageentry) # centered
+agec = ageentry-mean(ageentry) # centered ageentry variable
 
 summary(channing);summary(agec)
 
@@ -97,7 +97,7 @@ Wtest(LL,beta_hat,Vn_hat)
 #C. What p-value supports your conclusion? 0.008682138
 #D. State the null hypothesis in symbols. Ho: betad2=betaplacebo=0
 #E. Do you reject H0? Answer Yes or No. Yes
-#F. Are the results statistically significant? Answer Yes or No.
+#F. Are the results statistically significant? Answer Yes or No. Yes
 #G. If the results are statistically significant, follow up with all pairwise comparisons. State your conclusions in plain, non-statistical language.
 
 pairwise = cbind(1,-1,0,0,0)
@@ -108,5 +108,4 @@ intermodel = coxph(Surv(start,end,failed) ~ drug+age+sex+platelet+drug*platelet)
 anova(intermodel,model)
 #----------------------------------------------------------
 #(e) Test the proportional hazards assumption. What do you conclude? Ho: assume it is cox.ph
-cox.zph(intermodel)
-cox.zph(model)
+cox.zph(intermodel); cox.zph(model)

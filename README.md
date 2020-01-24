@@ -27,3 +27,11 @@ A thorough introduction to the basic ideas in supervised statistical learning wi
 
 
 Topics: multiple linear regression and its extensions, k-nn regression, variable selection and regularization via AIC,BIC, Ridge and lasso penalties, non-parametric methods including basis expansions, local regression and splines, generalized additive models, tree-based methods, bagging, boosting and random forests. 
+
+**STA305H5S - Experimental Design (R)**
+
+This course covers topics in the design and analysis of experiments. The topics covered include analysis of variance, randomization, confounding, block designs, factorial designs, orthogonal polynomials and response surface methods. Applications include agricultural experiments, laboratory experiments, and industrial experiments, including quality control techniques.
+
+**STA441H5S - Methods of Applied Statistics (SAS)**
+
+Vocabulary of data analysis, Tests of statistical significance, Principles of research design, Introduction to unix and SAS, Applications of statistical methods such as Multiple regression, Factorial ANOVA, Mixed linear models, Multivariate analysis of variance, Repeated measures, Logistic regression, Generalized linear models, Permutation tests and Bootstrapping.

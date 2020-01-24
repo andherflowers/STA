@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html class="ods_770cb358-ba15-48ab-afa2-4fa71d69d51b" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: ass1.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c section > table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c section > pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c div > table,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c div > pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c article > table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c article > pre,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j section > table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j section > pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j div > table,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j div > pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j article > table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j article > pre,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c p.note, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c p.warning, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c p.error, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c p.fatal,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j p.note, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j p.warning, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j p.error, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j p.fatal,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.c > table.layoutcontainer, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.l table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.l pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.l p.note,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.l p.warning, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.l p.error, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.l p.fatal { margin-left: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.c table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.c pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.c p.note,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.c p.warning, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.c p.error, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r p.note,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r table, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r pre, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r p.note,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r p.warning, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r p.error, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion.r p.fatal { margin-right: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b article, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b aside, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b details, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b figcaption, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b figure, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b footer, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b header, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b hgroup, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b nav, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b section { display: block }
+html.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b { font-size: 100% }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b ul, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b dd { margin: 0 0 0 40px }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b nav ul, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b img { border: 0; vertical-align: middle }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b svg:not(:root) { overflow: hidden }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b figure { margin: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b table { border-collapse: collapse; border-spacing: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b p { margin-top: 0; text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b h1.heading1 { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b h2.heading2 { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b h3.heading3 { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b h4.heading4 { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b h5.heading5 { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b h6.heading6 { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b span { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b table { margin-bottom: 1em }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b td, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b td[class$="fixed"], .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b th[class$="fixed"] { white-space: pre }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b section, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b article { padding-top: 1px; padding-bottom: 8px }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .stacked-value { text-align: left; display: block }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .stacked-cell > .stacked-value, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b td.data > td.data, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b th.data > td.data, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b th.data > th.data, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b td.data > th.data, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b th.header > th.header { border: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .stacked-cell > div.data { border-width: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > p { margin: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .batch { display: table }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .toc { display: none }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .proc_note_group, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .proc_title_group { margin-bottom: 1em }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b p.proctitle { margin: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b p.note, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b p.warning, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b p.error, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b p.fatal { display: table }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .notebanner, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .warnbanner, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .errorbanner, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .fatalbanner,
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .notecontent, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .warncontent, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .errorcontent, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .notebanner, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .warnbanner, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .errorbanner, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .fatalbanner { padding-right: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body > div > ol li { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .c { text-align: center }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .r { text-align: right }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .l { text-align: left }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .j { text-align: justify }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .d { text-align: right }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .b { vertical-align: bottom }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .m { vertical-align: middle }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .t { vertical-align: top }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b a:active { color: #800080 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .batch > tbody, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .batch > thead, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .batch { border: hidden; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > colgroup > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > colgroup, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > * > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > thead, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > tbody, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer > tfoot { border: none; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .cell, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .contentfolder, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .contentproclabel, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .data, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .graph > tbody, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .graph > thead, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .graph { border: hidden; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .heading1, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .heading2, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .heading3, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .heading4, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .heading5, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .indexaction, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutcontainer, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b a:link { color: #0000ff }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list3, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list4, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list5, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list6, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list7, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list8, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem3, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem4, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem5, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem6, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem7, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem8, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .output > tbody, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .output > thead, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .output { border: hidden; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .pagesproclabel, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > colgroup > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > colgroup, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > * > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > thead, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > tbody, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip > tfoot { border: none; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter10, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter2, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter3, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter4, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter5, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter6, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter7, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter8, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle10, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle2, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle3, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle4, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle5, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle6, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle7, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle8, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > colgroup > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > colgroup, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > * > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > thead, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > tbody, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer > tfoot { border: none; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .table > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .table > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .table { border: hidden; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > colgroup > col, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > colgroup, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > * > tr, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > thead, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > tbody, .ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer > tfoot { border: none; }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b a:visited { color: #800080 }
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_770cb358-ba15-48ab-afa2-4fa71d69d51b .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_770cb358-ba15-48ab-afa2-4fa71d69d51b" class="c body">
+<h1 class="body toc">Results: ass1.sas</h1>
+<section data-name="Freq" data-sec-type="proc">
+<div id="IDX" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Ru Lan Luo 1004475249</span> </p>
+<p><span class="c systemtitle2">Little Statclass Data</span> </p>
+<p><span class="c systemtitle3">Basic Descriptive Statistics</span> </p>
+</div>
+<div class="proc_title_group">
+<p class="c proctitle">The FREQ Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Freq Procedure</h1>
+<section>
+<h1 class="contentfolder toc">Table sex</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">sex</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+<th class="r b header" scope="col">Cumulative<br/>Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Female</th>
+<td class="r data">22</td>
+<td class="r data">37.93</td>
+<td class="r data">22</td>
+<td class="r data">37.93</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Male</th>
+<td class="r data">36</td>
+<td class="r data">62.07</td>
+<td class="r data">58</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX1">
+<h1 class="contentfolder toc">Table race</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">race</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+<th class="r b header" scope="col">Cumulative<br/>Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">A</th>
+<td class="r data">37</td>
+<td class="r data">63.79</td>
+<td class="r data">37</td>
+<td class="r data">63.79</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">B</th>
+<td class="r data">15</td>
+<td class="r data">25.86</td>
+<td class="r data">52</td>
+<td class="r data">89.66</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C</th>
+<td class="r data">6</td>
+<td class="r data">10.34</td>
+<td class="r data">58</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Means" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX2" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Ru Lan Luo 1004475249</span> </p>
+<p><span class="c systemtitle2">Little Statclass Data</span> </p>
+<p><span class="c systemtitle3">Basic Descriptive Statistics</span> </p>
+</div>
+<div class="proc_title_group">
+<p class="c proctitle">The MEANS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Means Procedure</h1>
+<article aria-label="Summary statistics">
+<h1 class="contentitem toc">Summary statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Summary statistics">
+<caption aria-label="Summary statistics"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">Variable</th>
+<th class="b header" scope="col">Label</th>
+<th class="r b header" scope="col">N</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="data">
+<div class="stacked-cell">
+<div>quiz</div>
+<div>assignment</div>
+<div>midterm</div>
+<div>final</div>
+</div>
+</th>
+<th class="data">
+<div class="stacked-cell">
+<div>Quiz average</div>
+<div>Computer assignment average</div>
+<div>Midterm score</div>
+<div>Final Exam score</div>
+</div>
+</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">58</div>
+<div class="r">58</div>
+<div class="r">58</div>
+<div class="r">58</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">7.2568966</div>
+<div class="r">8.4000000</div>
+<div class="r">68.8793103</div>
+<div class="r">49.4482759</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.0972233</div>
+<div class="r">1.1607620</div>
+<div class="r">14.9456062</div>
+<div class="r">16.5159916</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">4.6000000</div>
+<div class="r">4.6000000</div>
+<div class="r">10.0000000</div>
+<div class="r">15.0000000</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">9.6000000</div>
+<div class="r">9.9000000</div>
+<div class="r">95.0000000</div>
+<div class="r">87.0000000</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>
